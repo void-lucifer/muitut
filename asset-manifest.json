@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/muitut/static/css/main.2abdc04a.css",
+    "main.js": "/muitut/static/js/main.50c8bcc7.js",
+    "index.html": "/muitut/index.html",
+    "main.2abdc04a.css.map": "/muitut/static/css/main.2abdc04a.css.map",
+    "main.50c8bcc7.js.map": "/muitut/static/js/main.50c8bcc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2abdc04a.css",
+    "static/js/main.50c8bcc7.js"
+  ]
+}
