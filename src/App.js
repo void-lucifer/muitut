@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Routing from './Routing/Routing';
+import { createTheme, colors, ThemeProvider } from '@mui/material';
 
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    secondary: {
+      main: colors.teal[500], //secondary.dark and secondary.light are also created according to main
+    },
+    neutral:{
+      // main, light, dark, contrastText
+      main: colors.grey[500],
+      darker: colors.grey[700]
+    },
+  },
+})
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Routing />
+    </ThemeProvider>
   );
 }
 
